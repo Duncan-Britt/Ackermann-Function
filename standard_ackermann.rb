@@ -1,3 +1,7 @@
+500.times do
+  puts "\n"
+end
+
 def ack(m, n)
   case
   when m == 0
@@ -9,7 +13,8 @@ def ack(m, n)
   end
 end
 
-p ack(1,2)
+
+p ack(4,0)
 
 # ackermann (0,0) is 1
 # ackermann (0,1) is 2

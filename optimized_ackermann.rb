@@ -1,15 +1,20 @@
-def ack(m, n, a=2)
+
+def ack(m, n)
   case
   when m == 0
     n + 1
+  when m == 1
+    n + 2
+  when m == 2
+    2 * n + 3
   when n == 0
     ack(m-1, 1)
-  else
-    ack(m-1, (a*m-1)+m)
+  when m > 2 && n > 0
+    ack(m-1, ack(m, n-1))
   end
 end
 
-p ack(3,1)
+p ack(4,1)
 
 # ackermann (0,0) is 1
 # ackermann (0,1) is 2
