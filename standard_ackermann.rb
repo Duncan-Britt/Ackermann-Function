@@ -9,7 +9,8 @@ def ack(m, n)
   end
 end
 
-p ack(0,0)
+p ack(1,2)
+
 # ackermann (0,0) is 1
 # ackermann (0,1) is 2
 # ackermann (0,2) is 3

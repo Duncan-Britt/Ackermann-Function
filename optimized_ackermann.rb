@@ -1,4 +1,15 @@
+def ack(m, n, a=2)
+  case
+  when m == 0
+    n + 1
+  when n == 0
+    ack(m-1, 1)
+  else
+    ack(m-1, (a*m-1)+m)
+  end
+end
 
+p ack(3,1)
 
 # ackermann (0,0) is 1
 # ackermann (0,1) is 2
@@ -26,3 +37,5 @@
 # ackermann (3,5) is 253
 # ackermann (4,0) is 13
 # ackermann (4,1) is 65,533
+
+# ackerman (4,2) is NOT 196,603
